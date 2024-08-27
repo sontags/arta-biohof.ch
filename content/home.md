@@ -1,4 +1,4 @@
-Arta - Biohof
+Arta Biohof
 
 Für Artenvielfallt in der Natur und in zwischenmenschlichen Bereichen.
 
