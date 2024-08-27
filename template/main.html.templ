@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:wght@300..700&display=swap');
+
+/* RESET */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* TYPO */
+
+* {
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* LAYOUT */
+
+:root {
+  --padding: 20px;
+}
+
+* {
+	scroll-behavior: smooth;
+  scroll-margin-top: 55px;
+}
+
+nav {
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+}
+
+nav > ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: var(--padding);
+
+}
+
+nav > ul > li {
+  float: left;
+  display: block;
+  padding-right: var(--padding);
+  
+}
+
+.content {
+  padding: var(--padding);
+}
+
+section h1 {
+  padding-top: 30px;
+}
+
+/* COLOR */
+
+:root {
+  --white-color: #FFF;
+  --primary-color: #0d753a;
+}
+
+nav {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover, a:visited {
+  color: var(--white-color);
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      {{ range $elem := . }}{{ if ne (index $elem.Metadata "anchor") "home"}}<li><a href="#{{ index $elem.Metadata "anchor" }}">{{ index $elem.Metadata "navname"}}</a></li>{{ end }}{{ end }}
+    </ul>
+  </nav>
+  <div class="content">
+    {{ range $elem := . }}<section id="{{ index $elem.Metadata "anchor" }}">
+    {{ printf "%s" $elem.HTML }}
+    </section>{{ end }}
+  </div>
+</body>
+</html>

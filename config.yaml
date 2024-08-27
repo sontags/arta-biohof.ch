@@ -1,0 +1,31 @@
+---
+template: template/main.html.templ
+content:
+  - path: content/home.md
+    metadata:
+      anchor: home
+      navname: Home
+  - path: content/team.md
+    metadata:
+      anchor: team
+      navname: Team
+  - path: content/pferdepension.md
+    metadata:
+      anchor: pferde
+      navname: Pferdepension
+  - path: content/aepfel_und_birnen.md
+    metadata:
+      anchor: aepfelundbirnen
+      navname: Äpfel & Birnen
+  - path: content/mosterei.md
+    metadata:
+      anchor: mosterei
+      navname: Mosterei
+  - path: content/impressionen.md
+    metadata:
+      anchor: impressionen
+      navname: Impressionen
+  - path: content/kontakt.md
+    metadata:
+      anchor: kontakt
+      navname: Kontakt
