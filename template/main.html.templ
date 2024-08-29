@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arta Biohof</title>
   <style>
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Podkova:wght@400..800&display=swap');
+
 /* RESET */
 
 html {
@@ -33,13 +36,55 @@ img {
 
 /* TYPO */
 
+
 * {
-  font-size: 18px;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+  line-height: 1.6;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+nav > .wrapper > .logo {
+  text-transform: uppercase;
 }
 
 nav a {
   text-decoration: none;
-  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.content ul {
+  list-style-type: circle;
+  list-style-position: outside;
+
+}
+.content ul > li {
+  margin-left: 25px;
 }
 
 /* LAYOUT */
@@ -57,41 +102,115 @@ nav {
   overflow: hidden;
   position: sticky;
   top: 0px;
+  min-height: 80px;
 }
 
-nav > ul {
+nav > .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+nav > .wrapper > .logo {
+  float: left;
+  overflow: hidden;
+  padding-top: var(--padding);
+}
+
+nav > .wrapper > ul {
+  float: right; 
   list-style-type: none;
   overflow: hidden;
-  padding: var(--padding);
-
+  padding-left: var(--padding);
+  padding-top: var(--padding);
 }
 
-nav > ul > li {
+nav > .wrapper > ul > li {
   float: left;
   display: block;
   padding-right: var(--padding);
-  
 }
 
-.content {
-  padding: var(--padding);
+section > .wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
 }
 
-section h1 {
+section {
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.gallery {
+  column-count: 3;
+  column-gap: 25px;
+  column-fill: balance;
+}
+
+.gallery-entry {
+width: 100%;
+overflow: hidden;
+}
+
+.gallery-entry img {
+width: 100%;
+display: block;
+margin-bottom: 25px;
 }
 
 /* COLOR */
 
 :root {
-  --white-color: #FFF;
-  --primary-color: #0d753a;
+  --black-black: #444;
+  --color-citron: #e1ce7a;
+  --color-cream: #fbffb9;
+  --color-sunset: #FDD692;
+  --color-terracotta: #EC7357;
+  --color-liver: #754F44;
 }
 
 nav {
-  background-color: var(--primary-color);
-  color: var(--white-color);
+  background-color: var(--color-sunset);
+  color: var(--color-black);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+a, p, h1, h2, h3, h4, h5 {
+  color: var(--color-black);
+}
+
+section {
+  display: block;
+}
+
+#home {
+  text-align: center;
+  background-color: var(--color-cream);
+}
+
+#team {
+  background-color: var(--color-citron);
+}
+
+#pferde {
+  background-color: var(--color-sunset);
+}
+
+#aepfelundbirnen {
+  background-color: var(--color-terracotta);
+}
+
+#mosterei {
+  background-color: var(--color-citron);
+}
+
+#impressionen {
+  background-color: var(--color-cream);
+}
+
+#kontakt {
+  background-color: var(--color-liver);
 }
 
 nav a, a:active a:focus, a:hover, a:visited {
@@ -101,14 +220,17 @@ nav a, a:active a:focus, a:hover, a:visited {
 </head>
 <body>
   <nav>
-    <ul>
-      {{ range $elem := . }}{{ if ne (index $elem.Metadata "anchor") "home"}}<li><a href="#{{ index $elem.Metadata "anchor" }}">{{ index $elem.Metadata "navname"}}</a></li>{{ end }}{{ end }}
-    </ul>
+    <div class="wrapper">
+      <div class="logo">Arta Biohof</div>
+      <ul>
+        {{ range $elem := . }}{{ if ne (index $elem.Metadata "anchor") "home"}}<li><a href="#{{ index $elem.Metadata "anchor" }}">{{ index $elem.Metadata "navname"}}</a></li>{{ end }}{{ end }}
+      </ul>
+    </div>
   </nav>
   <div class="content">
-    {{ range $elem := . }}<section id="{{ index $elem.Metadata "anchor" }}">
+    {{ range $elem := . }}<section id="{{ index $elem.Metadata "anchor" }}"><div class="wrapper">
     {{ printf "%s" $elem.HTML }}
-    </section>{{ end }}
+    </div></section>{{ end }}
   </div>
 </body>
 </html>

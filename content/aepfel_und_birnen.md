@@ -1,6 +1,7 @@
 # Äpfel 
 
-## Niederstammbäume: 
+
+## Niederstammbäume
 
 __Ladina__ Farbe dunkelrot, vom Geschmack süss und saftig, Speiseapfel
 
@@ -12,7 +13,8 @@ __Rustica__ Farbe rot, leicht säuerlich, saftig und knackig. Ist ein guter Lage
 
 __Florina__ Farbe strahlend rot, saftig, knackig und süss. 
 
-## Hochstämmer
+
+## Hochstammbäume
 
 __Bernerrose__ Farbe dunkel karminrot, mittelgross, Fruchtfleisch grünlichweiss, saftig, würziges Aroma, erfrischender Geschmack
 
@@ -23,6 +25,7 @@ __Glocke__ Farbe gelb-grünlich selten rötlich, Geschmack ist säuerlich-erfris
 __Braeburn__ Farbe rötlich, festes Fruchtfleisch und schmeckt säuerlich
 
 __Jonathan__ Farbe dunkelrot über grüngelber Grundfarbe. Der Geschmack ist fein süßsäuerlich, aromatisch, das hellgelbe Fruchtfleisch ist fest und saftig.
+
 
 # Birnen
 

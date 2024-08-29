@@ -11,6 +11,7 @@ import (
 	"github.com/go-git/go-billy/v5/osfs"
 	"github.com/mitchellh/go-homedir"
 	"github.com/yuin/goldmark"
+	"github.com/yuin/goldmark/renderer/html"
 	"gopkg.in/yaml.v2"
 )
 
@@ -60,7 +61,14 @@ type content struct {
 
 func (c *content) toHTML() error {
 	var b bytes.Buffer
-	if err := goldmark.Convert(c.Markdown, &b); err != nil {
+	md := goldmark.New(
+		goldmark.WithExtensions(),
+		goldmark.WithParserOptions(),
+		goldmark.WithRendererOptions(
+			html.WithUnsafe(),
+		),
+	)
+	if err := md.Convert(c.Markdown, &b); err != nil {
 		err = fmt.Errorf("Could not render %s as HTML: %v", c.Path, err)
 		return err
 	}

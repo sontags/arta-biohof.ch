@@ -1,6 +1,6 @@
-Arta Biohof
+<div class="logo"><img src="logo.png" alt="Arta Biohof" /></div>
 
-Für Artenvielfallt in der Natur und in zwischenmenschlichen Bereichen.
+__Für Artenvielfallt in der Natur und in zwischenmenschlichen Bereichen__
 
 Denn wir sind überzeugt davon, dass wenn die Vielfalt und Einzigartigkeit der Natur und Menschen gefördert und gepflegt wird, dies zu einem bereicherndem miteinander führt. 
 
