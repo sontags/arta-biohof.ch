@@ -3,7 +3,7 @@
 In der Mosterei mosten wir im Herbst unser eigenes Mostobst und verkaufen den Most in 5 oder 10 Liter BiB (Bag in Box) Säcken mit Kartonschachtel.
 Der Most wird pasteurisiert und zum Teil mit Quitten und Birnen gemischt. 
 
-In der Regel kann unsere Mostpresse ca. 65% des Obstes auspressen; aus 100 kg Obst gewinnen wir zirka 65 Liter Most.
+In der Regel kann unsere Mostpresse ca. 60% des Obstes auspressen; aus 100 kg Obst gewinnen wir zirka 65 Liter Most.
 
 # Kundenmosterei
 
