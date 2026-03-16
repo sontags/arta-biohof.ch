@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arta Biohof</title>
   <style>
-@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Podkova:wght@400..800&display=swap');
+@import url('https://fonts.bunny.net/css?family=aleo:400,600,800');
 
 /* RESET */
 
@@ -38,14 +37,10 @@ img {
 
 
 * {
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
+  font-family: "Aleo", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
   line-height: 1.6;
 }
 
@@ -64,18 +59,19 @@ nav a {
 h1 {
   font-size: 48px;
   font-weight: 800;
+  margin-bottom: 16px;
 }
 
 h2 {
   text-transform: uppercase;
   font-weight: 800;
-  margin-top: 22px;
-  margin-bottom: 12px;
+  margin-top: 28px;
+  margin-bottom: 16px;
 }
 
 p {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .content ul {
@@ -90,7 +86,7 @@ p {
 /* LAYOUT */
 
 :root {
-  --padding: 20px;
+  --padding: 24px;
 }
 
 * {
@@ -99,36 +95,33 @@ p {
 }
 
 nav {
-  overflow: hidden;
   position: sticky;
   top: 0px;
-  min-height: 80px;
 }
 
 nav > .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding) 0;
 }
 
 nav > .wrapper > .logo {
-  float: left;
-  overflow: hidden;
-  padding-top: var(--padding);
+  flex-shrink: 0;
 }
 
 nav > .wrapper > ul {
-  float: right; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px var(--padding);
   list-style-type: none;
-  overflow: hidden;
-  padding-left: var(--padding);
-  padding-top: var(--padding);
 }
 
 nav > .wrapper > ul > li {
-  float: left;
   display: block;
-  padding-right: var(--padding);
 }
 
 section > .wrapper {
@@ -138,8 +131,7 @@ section > .wrapper {
 }
 
 section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 60px 0;
 }
 
 .gallery {
@@ -215,6 +207,50 @@ section {
 
 nav a, a:active a:focus, a:hover, a:visited {
   color: var(--white-color);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  * {
+    scroll-margin-top: 80px;
+  }
+
+  nav > .wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  nav > .wrapper > ul {
+    justify-content: center;
+  }
+
+  .gallery {
+    column-count: 1;
+  }
 }
   </style>
 </head>
