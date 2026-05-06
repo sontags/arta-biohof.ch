@@ -6,5 +6,6 @@
   <div class="gallery-entry"><a href="b3266283-51dd-45ea-bc3a-45a2f69646ca.jpg"><img src="b3266283-51dd-45ea-bc3a-45a2f69646ca.jpg"></a></div>
   <div class="gallery-entry"><a href="Selma4.jpg"><img src="Selma4.jpg"></a></div>
 
-  <div class="gallery-entry"><a href="heute1.jpg"><img src="heute1.jpg"></a></div>
+  <!-- Ersetzt -->
+  <div class="gallery-entry"><a href="WhatsAppImage.jpeg"><img src="WhatsAppImage.jpeg"></a></div>
 </div>
