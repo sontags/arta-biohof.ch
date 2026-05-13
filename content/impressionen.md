@@ -8,4 +8,7 @@
 
   <!-- Ersetzt -->
   <div class="gallery-entry"><a href="WhatsAppImage.jpeg"><img src="WhatsAppImage.jpeg"></a></div>
+
+  <!-- Neues Bild eingefügt -->
+  <div class="gallery-entry"><a href="dda891c4-8ba3-4286-bfbb-5cc187ae609a.jpg"><img src="dda891c4-8ba3-4286-bfbb-5cc187ae609a.jpg"></a></div>
 </div>
