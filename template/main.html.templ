@@ -35,7 +35,6 @@ img {
 
 /* TYPO */
 
-
 * {
   font-family: "Aleo", serif;
   font-weight: 400;
@@ -77,8 +76,8 @@ p {
 .content ul {
   list-style-type: circle;
   list-style-position: outside;
-
 }
+
 .content ul > li {
   margin-left: 25px;
 }
@@ -90,7 +89,7 @@ p {
 }
 
 * {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
   scroll-margin-top: 55px;
 }
 
@@ -141,14 +140,14 @@ section {
 }
 
 .gallery-entry {
-width: 100%;
-overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .gallery-entry img {
-width: 100%;
-display: block;
-margin-bottom: 25px;
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
 }
 
 /* COLOR */
@@ -179,6 +178,11 @@ section {
 #home {
   text-align: center;
   background-color: var(--color-cream);
+}
+
+/* HIER IST DEINE NEUE FARBE */
+#aktuelles {
+  background-color: #faedcd;
 }
 
 #team {
@@ -263,6 +267,7 @@ nav a, a:active a:focus, a:hover, a:visited {
       </ul>
     </div>
   </nav>
+
   <div class="content">
     {{ range $elem := . }}<section id="{{ index $elem.Metadata "anchor" }}"><div class="wrapper">
     {{ printf "%s" $elem.HTML }}
