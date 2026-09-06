@@ -3,7 +3,7 @@
 In der Mosterei mosten wir im Herbst unser eigenes Mostobst und verkaufen den Most in 5 oder 10 Liter BiB (Bag in Box) Säcken mit Kartonschachtel.
 Der Most wird pasteurisiert und zum Teil mit Quitten und Birnen gemischt. 
 
-In der Regel kann unsere Mostpresse ca. 60% des Obstes auspressen; aus 100 kg Obst gewinnen wir zirka 65 Liter Most.
+In der Regel kann unsere Mostpresse ca. 60% des Obstes auspressen; aus 100 kg Obst gewinnen wir zirka 60 Liter Most.
 
 # Kundenmosterei
 
@@ -19,9 +19,9 @@ __Gerne mosten wir auch Ihr Obst.__ So geht's:
 
 (passende Kartons können für CHF 1.— zusätzlich bei uns bezogen werden)
 
-__Preisbeispiel__ Sie bringen uns 100kG Obst und wollen alles in 5 Liter BiB Säcke abgefüllt. 
+__Preisbeispiel__ Sie bringen uns 100 Kg. Obst und wollen alles in 5 Liter BiB Säcke abgefüllt. 
 
-* 100 kg = 65 Liter Most  =  13 × 5 Litersäcke  =  13 × CHF 7.-- = CHF 91.—
-* Sie bekommen 13 Mostbeutel à 5 Liter und bezahlen für die Arbeit und Verpackung Total CHF 91.—
+* 100 kg = 60 Liter Most  =  12 × 5 Litersäcke  =  12 × CHF 7.-- = CHF 84.—
+* Sie bekommen 12 Mostbeutel à 5 Liter und bezahlen für die Arbeit und Verpackung Total CHF 84.—
 
 Bei Fragen können sie uns jederzeit kontaktieren.
