@@ -1,4 +1,4 @@
-<div class="logo"><img src="logo.png" alt="Arta Biohof" /><img src="../image.png" alt="Demeter Logo" style="height: 60px !important; width: auto !important; margin-left: 40px;" /></div>
+<div class="logo"><img src="logo.png" alt="Arta Biohof" style="height: 80px !important; width: auto !important;" /><img src="../image.png" alt="Demeter Logo" style="height: 80px !important; width: auto !important; margin-left: 30px;" /></div>
 __Für Artenvielfallt in der Natur und in zwischenmenschlichen Bereichen__
 
 Denn wir sind überzeugt davon, dass wenn die Vielfalt und Einzigartigkeit der Natur und Menschen gefördert und gepflegt wird, dies zu einem bereicherndem miteinander führt. 
