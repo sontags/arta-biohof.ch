@@ -1,4 +1,4 @@
-<div class="logo"><img src="logo.png" alt="Arta Biohof" /></div>
+<div class="logo"><img src="logo.png" alt="Arta Biohof" /><img src="/images.png" alt="Demeter Logo" /></div>
 
 __Für Artenvielfallt in der Natur und in zwischenmenschlichen Bereichen__
 
